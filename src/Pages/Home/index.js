@@ -1,11 +1,21 @@
 
-import { Box, Input, Button, Image, Container } from "@chakra-ui/react";
+import { Box, Input, Button, Image, Container, CardHeader, Card, CardBody, Text } from "@chakra-ui/react";
 import { IoShieldCheckmark, IoHeadset } from "react-icons/io5";
 import { BiSolidLike } from "react-icons/bi";
-import {FaArrowCircleRight} from 'react-icons/fa';
+
 import "../Home/index.css";
+
 import myImage from '../../imagens/dashboard.png';
 import arrow from '../../imagens/arrow-icon.svg';
+import impressions from '../../imagens/impressions.png';
+import logo_1 from '../../imagens/logo_1.png';
+import logo_2 from '../../imagens/logo_2.png';
+import logo_3 from '../../imagens/logo_3.png';
+import logo_4 from '../../imagens/logo_4.png';
+import logo_5 from '../../imagens/logo_5.png';
+import advanced from '../../imagens/advanced.png';
+import chat from '../../imagens/chat.png';
+import robo from '../../imagens/robo.png';
 
 
 function Home(){
@@ -93,6 +103,79 @@ function Home(){
                         </p>
                     </Box>
                 </div>
+            </Container>
+
+            <Container className="box-4">
+                <Box className="impressions-box">
+                    <div className="impressions-content">
+                        <h1 style={{fontSize: 48}}>Mais impressões, mais conversões</h1>
+                        <p style={{fontSize: 16, lineHeight: '150%'}}>
+                            Estamos comprometidos em aumentar a visibilidade da sua marca com mais impressões, resultando
+                            em mais conversões para o seu negócio. Nossa abordagem estratégica maximiza o alcance e a
+                            eficácia das suas campanhas, garantindo resultados excepcionais.
+                        </p>
+
+                        <Button className="free-trial">
+                            Teste Grátis
+                        </Button>
+                    </div>
+                    <div className="imagem">
+                        <Image src={impressions}/>
+                    </div>
+                </Box>
+            </Container>
+
+            <Box className="sub-footer">
+                <Image src={logo_1}/>
+                <Image src={logo_2}/>
+                <Image src={logo_3}/>
+                <Image src={logo_4}/>
+                <Image src={logo_5}/>
+            </Box>
+
+            <Container className="box-5">
+                <h1 style={{fontSize: 48}}>Features</h1>
+                <Box className="features">
+                    <Card className="card-feature">
+                        <CardHeader>
+                            <Image src={advanced}/>
+                        </CardHeader>
+                        <CardBody style={{height: 183, display: 'flex', justifyContent: 'space-between', flexDirection: 'column'}}>
+                            <Text>Criptografia avançada de 246 bits</Text>
+                            <Text>
+                                Apresentamos nossa solução de criptografia avançada de 246 bits, garantindo máxima segurança
+                                para seus dados sensíveis. Com tecnologia de ponta, protegemos suas informações contra ameaças
+                                cibernéticas.
+                            </Text>
+                        </CardBody>
+                    </Card>
+                    <Card className="card-feature">
+                        <CardHeader>
+                            <Image src={chat}/>
+                        </CardHeader>
+                        <CardBody style={{height: 183, display: 'flex', justifyContent: 'space-between', flexDirection: 'column'}}>
+                            <Text>Ferramentas de colaboração simples</Text>
+                            <Text>
+                                Nossa empresa oferece ferramentas de colaboração simples, facilitando o trabalho em equipe e a
+                                comunicação. Com uma interface intuitiva e recursos eficientes, sua equipe pode compartilhar ideias
+                                e documentos com facilidade. Simplifique a colaboração e aumente a produtividade com nossas soluções.
+                            </Text>
+                        </CardBody>
+                    </Card>
+                    <Card className="card-feature">
+                        <CardHeader>
+                            <Image src={robo}/>
+                        </CardHeader>
+                        <CardBody style={{height: 183, display: 'flex', justifyContent: 'space-between', flexDirection: 'column'}}>
+                            <Text>Recursos de IA personalizáveis</Text>
+                            <Text>
+                                Descubra nosso produto com recursos de IA personalizáveis, projetado para atender ás
+                                necessidades específicas do seu negócio. Otimize processos, melhore a tomada de decisões e 
+                                ofereça experiência únicas aos clientes.
+                            </Text>
+                        </CardBody>
+                    </Card>
+                </Box>
             </Container>
 
         </div>
