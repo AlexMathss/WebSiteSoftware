@@ -274,7 +274,7 @@
     width: 100%;
     height: 497px;
 
-    background-color: orange;
+    background-color: #ffffff;
 
     display: flex;
     flex-direction: column;
@@ -283,21 +283,277 @@
 }
 
 .features {
-    background-color: green;
     width: 1280px;
     height: 391px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    border-radius: 24px;
+
+    background-color: rgba(215, 152, 225, 0.13);
+    
+}
+
+.card-feature {
+    width: 350px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-header-text {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.card-body-feature {
+    height: 130px;
+    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* -------------------- setima parte -------------------- */
+
+.box-6 {
+    width: 100%;
+    height: 698px;
+    background-color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.comments {
+    width: 1281px;
+    height: 568px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card-comment {
+    width: 411px;
+    height: 404px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    border: solid 2px rgba(97, 153, 237, 0.26);
+    border-radius: 24px;
+}
+
+.box-cards {
+    width: 100%;
+    height: 404px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* -------------------- oitava parte -------------------- */
+
+.box-7 {
+    width: 100%;
+    height: 447px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-pricing {
+    width: 846px;
+    height: 260px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pricing-title {
+    font-size: 56px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.princing-subtitle {
+    font-size: 16px;
+}
+
+.pricing-button {
+    width: 171px;
+    height: 56px;
+
+    background-color: #1D2130;
+
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+
+    cursor: pointer;
+
+    border-radius: 12px;
+    border:none;
+}
+
+/* -------------------- nona parte -------------------- */
+
+.box-8 {
+    width: 100%;
+    height: 383px;
+    background-color: #1D2130;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.footer-content {
+    width: 1280px;
+    height: 187px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.company-link{
+    width: 230px;
+    height: 155px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.resources-link {
+    width: 230px;
+    height: 155px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.product-link {
+    width: 230px;
+    height: 187px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.subscribe {
+    width: 410px;
+    height: 163px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.subscribe-header {
+    width: 100%;
+    height: 91px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.subscribe-footer {
+    background-color: rgba(255,255,255, 0.10);
+    width: 100%;
+    height: 56px;
+
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.input-footer {
+    width: 258px;
+    height: 100%;
+
+    padding-left: 22px;
+
+    background-color: transparent;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    color: #FFFFFF;
+}
+
+.subscribe-button {
+    width: 152px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+    border: none;
+
+    cursor: pointer;
+}
+
+.box-copy {
+    width: 1280px;
+    height: 20px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.card-feature {
-    width: 339px;
-    height: 263px;
-    background-color: purple;
+.separator {
+    width: 442px;
+    height: 2px;
+
+    background-color: '#888888';
+}
+
+.box-social {
+    width: 152px;
+    height: 20px;
 
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+}
+
+.social-img {
+    width: 20px;
+    height: 20px;
 }

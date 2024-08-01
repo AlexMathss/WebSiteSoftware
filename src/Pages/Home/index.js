@@ -16,6 +16,15 @@ import logo_5 from '../../imagens/logo_5.png';
 import advanced from '../../imagens/advanced.png';
 import chat from '../../imagens/chat.png';
 import robo from '../../imagens/robo.png';
+import divider from '../../imagens/divider.png';
+import gabriel from '../../imagens/gabriel.png';
+import rafael from '../../imagens/rafael.png';
+import leonardo from '../../imagens/leonardo.png';
+import logo from '../../imagens/logo.png';
+import twitter from '../../imagens/twitter.png';
+import facebook from '../../imagens/Facebook.png';
+import instagram from '../../imagens/Instagram.png';
+import linkedin from '../../imagens/LinkedIn.png';
 
 
 function Home(){
@@ -137,44 +146,159 @@ function Home(){
                 <h1 style={{fontSize: 48}}>Features</h1>
                 <Box className="features">
                     <Card className="card-feature">
+                        <Image src={advanced} style={{width:56, height: 56}}/>
                         <CardHeader>
-                            <Image src={advanced}/>
+                            <Text className="card-header-text">Criptografia avançada de 246 bits</Text>
                         </CardHeader>
-                        <CardBody style={{height: 183, display: 'flex', justifyContent: 'space-between', flexDirection: 'column'}}>
-                            <Text>Criptografia avançada de 246 bits</Text>
-                            <Text>
+                        <CardBody className="card-body-feature">
+                            <Text style={{lineHeight: '150%', fontSize: 18}}>
                                 Apresentamos nossa solução de criptografia avançada de 246 bits, garantindo máxima segurança
                                 para seus dados sensíveis. Com tecnologia de ponta, protegemos suas informações contra ameaças
                                 cibernéticas.
                             </Text>
                         </CardBody>
                     </Card>
+                    <Image src={divider} style={{width: 2, height: 263}}/>
                     <Card className="card-feature">
+                        <Image src={chat} style={{width: 56, height: 56}}/>
                         <CardHeader>
-                            <Image src={chat}/>
+                            <Text className="card-header-text">Ferramentas de colaboração simples</Text>
                         </CardHeader>
-                        <CardBody style={{height: 183, display: 'flex', justifyContent: 'space-between', flexDirection: 'column'}}>
-                            <Text>Ferramentas de colaboração simples</Text>
-                            <Text>
+                        <CardBody className="card-body-feature">
+                            <Text style={{lineHeight: '150%', fontSize: 18}}>
                                 Nossa empresa oferece ferramentas de colaboração simples, facilitando o trabalho em equipe e a
-                                comunicação. Com uma interface intuitiva e recursos eficientes, sua equipe pode compartilhar ideias
-                                e documentos com facilidade. Simplifique a colaboração e aumente a produtividade com nossas soluções.
+                                comunicação. Com uma interface intuitiva e recursos eficientes.
                             </Text>
                         </CardBody>
                     </Card>
+                    <Image src={divider} style={{width: 2, height: 263}}/>
                     <Card className="card-feature">
+                        <Image src={robo} style={{width: 56, height: 56}}/>
                         <CardHeader>
-                            <Image src={robo}/>
+                            <Text className="card-header-text">Recursos de IA personalizáveis</Text>
                         </CardHeader>
-                        <CardBody style={{height: 183, display: 'flex', justifyContent: 'space-between', flexDirection: 'column'}}>
-                            <Text>Recursos de IA personalizáveis</Text>
-                            <Text>
+                        <CardBody className="card-body-feature">
+                            <Text style={{lineHeight: '150%', fontSize: 18}}>
                                 Descubra nosso produto com recursos de IA personalizáveis, projetado para atender ás
-                                necessidades específicas do seu negócio. Otimize processos, melhore a tomada de decisões e 
-                                ofereça experiência únicas aos clientes.
+                                necessidades específicas do seu negócio.
                             </Text>
                         </CardBody>
                     </Card>
+                </Box>
+            </Container>
+
+            <Container className="box-6">
+                <Box className="comments">
+                    <h1>Os resultados impressionantes que<br/> nossos clientes experimentaram</h1>
+                    <Box className="box-cards">
+                        <Card className="card-comment">
+                            <CardHeader style={{width: 283, height: 190}}>
+                                <Text style={{fontSize: 18, fontWeight: 'bolder'}}>
+                                    "Estou impressionado com a eficiência do software! A ferramenta de análise de leads<br/>
+                                    aumentou nossa produtividade em 30%. O suporte ao cliente é excelente e sempre disponível<br/>
+                                    para ajudar. Recomendo para qualquer empresa ue queira otimizar suas vendas!"
+                                </Text>
+                            </CardHeader>
+                            <CardBody>
+                                <Image src={gabriel} style={{width: 56, height: 56}}/>
+                                <Text style={{fontSize: 20, fontWeight: 'bold'}}>Gabriel</Text>
+                                <Text style={{fontSize: 12}}>CEO</Text>
+                            </CardBody>
+                        </Card>
+                        <Card className="card-comment">
+                            <CardHeader style={{width: 283, height: 190}}>
+                                <Text style={{fontSize: 18, fontWeight: 'bolder'}}>
+                                    "A segurança dos dados é uma prioridade para nós, e a solução de criptografia de 246<br/>
+                                    bits oferecida por esta empresa é simplesmente a melhor. A equipe foi super atenciosa e<br/>
+                                    personalizou tudo de acordo com nossas necessidades. Excelente serviço!"
+                                </Text>
+                            </CardHeader>
+                            <CardBody>
+                                <Image src={leonardo} style={{width: 56, height: 56}}/>
+                                <Text style={{fontSize: 20, fontWeight: 'bold'}}>Leonardo</Text>
+                                <Text style={{fontSize: 12}}>Marketing Manager</Text>
+                            </CardBody>
+                        </Card>
+                        <Card className="card-comment">
+                            <CardHeader style={{width: 283, height: 190}}>
+                                <Text style={{fontSize: 18, fontWeight: 'bolder'}}>
+                                    "Adorei a simplicade das ferramentas de colaboração! Facilitou muito o trabalho
+                                    em equipe, e a integração com outras plataformas foi suave. A personalização com IA nos
+                                    ajudou a automatizar processos complexos. Parabéns pelo serviço de qualidade!"
+                                </Text>
+                            </CardHeader>
+                            <CardBody>
+                                <Image src={rafael} style={{width: 56, height: 56}}/>
+                                <Text style={{fontSize: 20, fontWeight: 'bold'}}>Rafael</Text>
+                                <Text style={{fontSize: 12}}>CTO</Text>
+                            </CardBody>
+                        </Card>
+                    </Box> 
+                </Box>
+            </Container>
+
+            <Container className="box-7">
+                <Box className="box-pricing">
+                    <Text className="pricing-title">
+                        Você está pronto para expandir seu<br/>
+                        negócio conosco?
+                    </Text>
+                    <Text className="princing-subtitle">
+                        Garanta agora a melhor solução para suas necessidades! Clique aqui e aproveite nossa oferta especial!
+                    </Text>
+                    <Button className="pricing-button">
+                        Veja o Preço
+                    </Button>
+                </Box>
+            </Container>
+
+            <Container className="box-8">
+                <Box className="footer-content">
+                    <Card className="company-link">
+                        <Text style={{fontSize: 18, fontWeight: 'bold', color: '#ffffff'}}>Company</Text>
+                        <Text>Sobre nós</Text>
+                        <Text>Por que nos escolher?</Text>
+                        <Text>Preços</Text>
+                        <Text>Testemunhos</Text>
+                    </Card>
+                    <Card className="resources-link">
+                        <Text style={{fontSize: 18, fontWeight: 'bold', color: '#ffffff'}}>Resources</Text>
+                        <Text>Política de Privacidade</Text>
+                        <Text>Termos e Condições</Text>
+                        <Text>Blog</Text>
+                        <Text>Contate-nos</Text>
+                    </Card>
+                    <Card className="product-link">
+                        <Text style={{fontSize: 18, fontWeight: 'bold', color: '#ffffff'}}>Produtos</Text>
+                        <Text>Gerenciamento de Projetos</Text>
+                        <Text>Controlador de Tempo</Text>
+                        <Text>Cronograma</Text>
+                        <Text>Geração de Leads</Text>
+                        <Text>Colaboração Remota</Text>
+                    </Card>
+                    <Card className="subscribe">
+                        <CardHeader className="subscribe-header">
+                            <Image src={logo} style={{width: 139.43, height: 32}}/>
+                            <Text style={{fontSize: 18, fontWeight: 'bold', color: '#FFFFFF'}}>Assine nossas notícias</Text>
+                        </CardHeader>
+                        <CardBody className="subscribe-footer">
+                            <Input placeholder="Digite seu e-mail" className="input-footer"/>
+                            <Button className="subscribe-button">
+                                Inscreva-se
+                            </Button>
+                        </CardBody>
+                    </Card>
+                </Box>
+                <Box className="box-copy">
+                    <div className="separator"/>
+                    <Text style={{fontSize: 12, color: '#FFFFFF'}}> &copy; CopyRight Finsweet 2022</Text>
+                    <Box className="box-social">
+                        <Image src={facebook} className="social-img"/>
+                        <Image src={twitter} className="social-img"/>
+                        <Image src={instagram} className="social-img"/>
+                        <Image src={linkedin} className="social-img"/>
+                    </Box>
+                    <div className="separator"/>
                 </Box>
             </Container>
 
